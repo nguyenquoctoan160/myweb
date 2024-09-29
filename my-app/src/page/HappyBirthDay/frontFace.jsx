@@ -1,4 +1,5 @@
+import "./frontFace.scss";
 const FrontFace = () => {
-  return <></>;
+  return <div className="BDfrontfaceContainer"></div>;
 };
 export default FrontFace;
