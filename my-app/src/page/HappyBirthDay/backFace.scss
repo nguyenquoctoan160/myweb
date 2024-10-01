@@ -6,6 +6,35 @@
   background-size: cover;
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  img {
+    position: absolute;
+    bottom: 9vh;
+    width: 200px;
+    height: 200px;
+    &:hover {
+      animation: shake-center 1s ease-in-out infinite;
+    }
+  }
+  .bubble {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 255, 255, 0.635);
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 30vh;
+    left: 10%;
+    animation: 4s linear infinite;
+    animation: rise ease-out forwards;
+    .dot {
+      height: 10px;
+      width: 10px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 20%;
+      right: 20%;
+    }
+  }
   .BFBorder {
     position: absolute;
     width: 100%;
@@ -13,5 +42,64 @@
     background: url("./image/pngtree-golden-border-frame-png-image_3263533-removebg-preview.png")
       no-repeat center center;
     background-size: cover;
+    .BDtext {
+      margin-left: 10vh;
+      margin-right: 10vh;
+      margin-top: 20vh;
+      margin-bottom: 20vh;
+      div {
+        width: 100%;
+        font-size: large;
+        font-weight: lighter;
+        font-family: "Brush Script MT", cursive;
+      }
+    }
+  }
+}
+@keyframes shake-center {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px); /* Nổi lên trên 100px */
+    opacity: 0; /* Biến mất dần */
   }
 }
