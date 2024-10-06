@@ -3,8 +3,8 @@ const FrontFace = () => {
   return (
     <div className="BDfrontfaceContainer">
       <div className="ffName">
-        <p>To : .........</p>
-        <p>2024</p>
+        <p>To NGUYEN THU QUYNH</p>
+        <p>07 - 10 - 2024</p>
       </div>
     </div>
   );
