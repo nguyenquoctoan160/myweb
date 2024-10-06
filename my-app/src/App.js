@@ -17,7 +17,7 @@ function App() {
       element: <></>,
     },
     {
-      path: "hpbd",
+      path: "toanocto",
       element: <HappyBirthDay />,
     },
   ]);
