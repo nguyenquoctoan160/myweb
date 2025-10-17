@@ -4,10 +4,10 @@ const Balloons = () => {
     <div className="Balloonscontainer">
       <div className="balloon">
         <div>
-          <span>Happy</span>
+          <span className="longtext">Happy</span>
         </div>
         <div>
-          <span>Birth</span>
+          <span className="longtext">Birth</span>
         </div>
         <div>
           <span>D</span>
