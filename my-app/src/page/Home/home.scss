@@ -15,31 +15,31 @@
   align-items: center;
   flex-direction: column;
   h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 10vw;
+    margin-bottom: 1.54vw;
     color: #005f73;
   }
   .homeinput {
     display: flex;
-    gap: 10px;
+    gap: 0.77vw;
     input {
-      padding: 10px;
-      width: 300px;
-      height: 50px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      margin-bottom: 15px;
-      font-size: 1.1rem;
+      padding: 0.77vw;
+      width: 23.08vw;
+      height: 3.85vw;
+      border-radius: 0.38vw;
+      border: 0.08vw solid #ccc;
+      margin-bottom: 1.15vw;
+      font-size: 2.5vw;
     }
 
     .btnHome {
       background-color: #028090;
-      height: 50px;
-      padding: 10px 20px;
-      border-radius: 5px;
+      height: 3.85vw;
+      padding: 0.77vw 1.54vw;
+      border-radius: 0.38vw;
       cursor: pointer;
       color: white;
-      font-size: 2.2rem;
+      font-size: 4vw;
       transition: background-color 0.3s ease;
       display: flex;
       align-items: center;

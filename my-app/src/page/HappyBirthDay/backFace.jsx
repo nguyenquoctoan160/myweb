@@ -21,8 +21,8 @@ const BackFace = () => {
     for (let i = 0; i < count; i++) {
       newBubbles.push({
         id: Date.now() + i, // Đảm bảo id duy nhất
-        left: Math.random() * 20 + 5, // Vị trí ngẫu nhiên
-        size: Math.random() * 10,
+        left: Math.random() * 9 + 2.5, // Vị trí ngẫu nhiên
+        size: Math.random() * 5,
         animationDuration: Math.random() * 2 + 5, // Thời gian nổi lên ngẫu nhiên
       });
     }
@@ -43,7 +43,7 @@ const BackFace = () => {
       <div className="BFBorder">
         <Balloons></Balloons>
         <div className="BDtext">
-          <div> Happy Birthday, Quynh!</div>
+          <div> Happy Birthday, Bao Anh!</div>
           <div>
             {" "}
             May this special day bring endless joy, love, and success your way.
@@ -74,10 +74,10 @@ const BackFace = () => {
           key={bubble.id}
           className="bubble"
           style={{
-            left: `${bubble.left}vh`,
+            left: `${bubble.left}vw`,
             animationDuration: `${bubble.animationDuration}s`,
-            width: `${bubble.size}vh`,
-            height: `${bubble.size}vh`,
+            width: `${bubble.size}vw`,
+            height: `${bubble.size}vw`,
           }}
           onClick={() => {
             setBubbles((prevBubbles) =>

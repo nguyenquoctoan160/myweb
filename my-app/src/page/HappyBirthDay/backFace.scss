@@ -5,30 +5,30 @@
   //background: url("./image/thiepcmsn.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 0.546875vw 2.23vw 0;
   img {
     position: absolute;
-    bottom: 9vh;
-    width: 200px;
-    height: 200px;
+    top: 29vw;
+    width: 15.38vw;
+    height: 15.38vw;
     &:hover {
       animation: shake-center 1s ease-in-out infinite;
     }
   }
   .bubble {
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    border: 0.15vw solid rgba(255, 255, 255, 0.7);
     background-color: rgba(0, 255, 255, 0.635);
-    border-radius: 50px;
+    border-radius: 3.85vw;
     position: absolute;
     cursor: pointer;
-    bottom: 30vh;
+    bottom: 13.7109375vw;
     left: 10%;
     animation: 4s linear infinite;
     animation: rise ease-out forwards;
     .dot {
-      height: 10px;
-      width: 10px;
-      border-radius: 50px;
+      height: 0.77vw;
+      width: 0.77vw;
+      border-radius: 3.85vw;
       background: rgba(255, 255, 255, 0.5);
       position: absolute;
       top: 20%;
@@ -39,17 +39,16 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("./image/pngtree-golden-border-frame-png-image_3263533-removebg-preview.png")
-      no-repeat center center;
+    background: url("./image/squareframe.png") no-repeat center center;
     background-size: cover;
     .BDtext {
-      margin-left: 10vh;
-      margin-right: 10vh;
-      margin-top: 20vh;
-      margin-bottom: 20vh;
+      margin-left: 4.5703125vw;
+      margin-right: 4.5703125vw;
+      margin-top: 9.140625vw;
+      margin-bottom: 9.140625vw;
       div {
         width: 100%;
-        font-size: large;
+        font-size: 1.5vw;
         font-weight: lighter;
         font-family: "Brush Script MT", cursive;
       }
@@ -99,7 +98,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(-100px); /* Nổi lên trên 100px */
+    transform: translateY(-7.69vw); /* Nổi lên trên 7.69vw */
     opacity: 0; /* Biến mất dần */
   }
 }

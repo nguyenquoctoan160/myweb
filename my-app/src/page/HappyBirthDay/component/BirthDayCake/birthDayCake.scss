@@ -2,24 +2,25 @@
   $vanilla: #f0e4d0;
   $chocolate: #553c13;
   position: absolute;
-  bottom: 150px;
-  right: 150px;
-  z-index: 5px;
+  bottom: 11.54vw;
+  right: 11.54vw;
+  z-index: 0.38vw;
   .firebtn {
     position: absolute;
     background-color: #ccc;
-    top: -120px;
-    right: -120px;
+    top: -9.23vw;
+    right: -9.23vw;
     z-index: 6;
     color: red;
     border-radius: 50%;
     border-color: red;
-    border-width: 5px;
-    width: 30px;
-    height: 30px;
+    border-width: 0.38vw;
+    width: 2.31vw;
+    height: 2.31vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5vw;
     cursor: pointer;
     &:hover {
       background-color: red;
@@ -28,36 +29,36 @@
   }
   @mixin foodColoring($color) {
     background-color: $color;
-    box-shadow: 0 2px 0px lighten($color, 5%), 0 4px 0px darken($color, 8.2%),
-      0 6px 0px darken($color, 8.4%), 0 8px 0px darken($color, 8.6%),
-      0 10px 0px darken($color, 8.8%), 0 12px 0px darken($color, 9%),
-      0 14px 0px darken($color, 9.2%), 0 16px 0px darken($color, 9.4%),
-      0 18px 0px darken($color, 9.6%), 0 20px 0px darken($color, 9.8%),
-      0 22px 0px darken($color, 10%), 0 24px 0px darken($color, 10.2%),
-      0 26px 0px darken($color, 10.4%), 0 28px 0px darken($color, 10.6%),
-      0 30px 0px darken($color, 10.8%);
+    box-shadow: 0 0.15vw 0 lighten($color, 5%), 0 0.31vw 0 darken($color, 8.2%),
+      0 0.46vw 0 darken($color, 8.4%), 0 0.62vw 0 darken($color, 8.6%),
+      0 0.77vw 0 darken($color, 8.8%), 0 0.92vw 0 darken($color, 9%),
+      0 1.08vw 0 darken($color, 9.2%), 0 1.23vw 0 darken($color, 9.4%),
+      0 1.38vw 0 darken($color, 9.6%), 0 1.54vw 0 darken($color, 9.8%),
+      0 1.69vw 0 darken($color, 10%), 0 1.85vw 0 darken($color, 10.2%),
+      0 2vw 0 darken($color, 10.4%), 0 2.15vw 0 darken($color, 10.6%),
+      0 2.31vw 0 darken($color, 10.8%);
   }
 
   .cake {
     position: absolute;
-    width: 250px;
-    height: 200px;
+    width: 19.23vw;
+    height: 15.38vw;
     top: 50%;
     left: 50%;
-    margin-top: -70px;
-    margin-left: -125px;
+    margin-top: -5.38vw;
+    margin-left: -9.62vw;
   }
 
   .plate {
-    width: 270px;
-    height: 110px;
+    width: 20.77vw;
+    height: 8.46vw;
     position: absolute;
-    bottom: -10px;
-    left: -10px;
+    bottom: -0.77vw;
+    left: -0.77vw;
     background-color: #ccc;
     border-radius: 50%;
-    box-shadow: 0 2px 0 darken(#ccc, 10%), 0 4px 0 darken(#ccc, 10%),
-      0 5px 40px rgba(black, 0.5);
+    box-shadow: 0 0.15vw 0 darken(#ccc, 10%), 0 0.31vw 0 darken(#ccc, 10%),
+      0 0.38vw 3.08vw rgba(black, 0.5);
   }
 
   .cake > * {
@@ -67,39 +68,39 @@
   .layer {
     position: absolute;
     display: block;
-    width: 250px;
-    height: 100px;
+    width: 19.23vw;
+    height: 7.69vw;
     border-radius: 50%;
     @include foodColoring($chocolate);
   }
 
   .layer-top {
-    top: 0px;
+    top: 0;
   }
   .layer-middle {
-    top: 33px;
+    top: 2.54vw;
   }
   .layer-bottom {
-    top: 66px;
+    top: 5.08vw;
   }
 
   .icing {
-    top: 2px;
-    left: 5px;
+    top: 0.15vw;
+    left: 0.38vw;
     background-color: $vanilla;
-    width: 240px;
-    height: 90px;
+    width: 18.46vw;
+    height: 6.92vw;
     border-radius: 50%;
     &:before {
       content: "";
       position: absolute;
-      top: 4px;
-      right: 5px;
-      bottom: 6px;
-      left: 5px;
+      top: 0.31vw;
+      right: 0.38vw;
+      bottom: 0.46vw;
+      left: 0.38vw;
       background-color: lighten($vanilla, 3%);
-      box-shadow: 0 0 4px lighten($vanilla, 5%), 0 0 4px lighten($vanilla, 5%),
-        0 0 4px lighten($vanilla, 5%);
+      box-shadow: 0 0 0.31vw lighten($vanilla, 5%),
+        0 0 0.31vw lighten($vanilla, 5%), 0 0 0.31vw lighten($vanilla, 5%);
       border-radius: 50%;
       z-index: 1;
     }
@@ -107,87 +108,87 @@
 
   .drip {
     display: block;
-    width: 50px;
-    height: 60px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    width: 3.85vw;
+    height: 4.62vw;
+    border-bottom-left-radius: 1.92vw;
+    border-bottom-right-radius: 1.92vw;
     background-color: $vanilla;
   }
 
   .drip1 {
-    top: 53px;
-    left: 5px;
+    top: 4.08vw;
+    left: 0.38vw;
     transform: skewY(15deg);
-    height: 48px;
-    width: 40px;
+    height: 3.69vw;
+    width: 3.08vw;
   }
 
   .drip2 {
-    top: 69px;
-    left: 181px;
+    top: 5.31vw;
+    left: 13.92vw;
     transform: skewY(-15deg);
   }
 
   .drip3 {
-    top: 54px;
-    left: 90px;
-    width: 80px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    top: 4.15vw;
+    left: 6.92vw;
+    width: 6.15vw;
+    border-bottom-left-radius: 3.08vw;
+    border-bottom-right-radius: 3.08vw;
   }
 
   .candle {
     background-color: #7b020b;
-    width: 16px;
-    height: 50px;
-    border-radius: 8px / 4px;
-    margin-left: -8px;
+    width: 1.23vw;
+    height: 3.85vw;
+    border-radius: 0.62vw / 0.31vw;
+
     z-index: 5;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
     &:hover {
-      box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 1.15vw 0.38vw rgba(255, 255, 255, 0.8);
     }
     &:before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 16px;
-      height: 8px;
+      width: 1.23vw;
+      height: 0.62vw;
       border-radius: 50%;
       background-color: lighten(#7b020b, 10%);
     }
   }
   .candle1 {
-    top: 0px;
+    top: 0;
     left: 30%;
   }
 
   .candle2 {
-    top: -20px;
+    top: -1.54vw;
     left: 50%; // Giữ vị trí cũ
   }
 
   .candle3 {
-    top: 0px;
+    top: 0;
     left: 70%;
   }
 
   .flame {
     position: absolute;
     background-color: orange;
-    width: 15px;
-    height: 35px;
-    border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
-    top: -34px;
+    width: 1.15vw;
+    height: 2.69vw;
+    border-radius: 0.77vw 0.77vw 0.77vw 0.77vw / 1.92vw 1.92vw 0.77vw 0.77vw;
+    top: -2.62vw;
     left: 50%;
-    margin-left: -7.5px;
+    margin-left: -0.58vw;
     opacity: 0;
     transition: opacity 0.2s ease-out; // Gradually extinguish the flame
     z-index: 5;
-    box-shadow: 0 0 10px rgba(orange, 0.5), 0 0 20px rgba(orange, 0.5),
-      0 0 60px rgba(orange, 0.5), 0 0 80px rgba(orange, 0.5);
+    box-shadow: 0 0 0.77vw rgba(orange, 0.5), 0 0 1.54vw rgba(orange, 0.5),
+      0 0 4.62vw rgba(orange, 0.5), 0 0 6.15vw rgba(orange, 0.5);
     transform-origin: 50% 90%;
     animation: flicker 1s ease-in-out alternate infinite;
   }
@@ -202,28 +203,28 @@
   @keyframes flicker {
     0% {
       transform: skewX(5deg);
-      box-shadow: 0 0 10px rgba(orange, 0.2), 0 0 20px rgba(orange, 0.2),
-        0 0 60px rgba(orange, 0.2), 0 0 80px rgba(orange, 0.2);
+      box-shadow: 0 0 0.77vw rgba(orange, 0.2), 0 0 1.54vw rgba(orange, 0.2),
+        0 0 4.62vw rgba(orange, 0.2), 0 0 6.15vw rgba(orange, 0.2);
     }
     25% {
       transform: skewX(-5deg);
-      box-shadow: 0 0 10px rgba(orange, 0.5), 0 0 20px rgba(orange, 0.5),
-        0 0 60px rgba(orange, 0.5), 0 0 80px rgba(orange, 0.5);
+      box-shadow: 0 0 0.77vw rgba(orange, 0.5), 0 0 1.54vw rgba(orange, 0.5),
+        0 0 4.62vw rgba(orange, 0.5), 0 0 6.15vw rgba(orange, 0.5);
     }
     50% {
       transform: skewX(10deg);
-      box-shadow: 0 0 10px rgba(orange, 0.3), 0 0 20px rgba(orange, 0.3),
-        0 0 60px rgba(orange, 0.3), 0 0 80px rgba(orange, 0.3);
+      box-shadow: 0 0 0.77vw rgba(orange, 0.3), 0 0 1.54vw rgba(orange, 0.3),
+        0 0 4.62vw rgba(orange, 0.3), 0 0 6.15vw rgba(orange, 0.3);
     }
     75% {
       transform: skewX(-10deg);
-      box-shadow: 0 0 10px rgba(orange, 0.4), 0 0 20px rgba(orange, 0.4),
-        0 0 60px rgba(orange, 0.4), 0 0 80px rgba(orange, 0.4);
+      box-shadow: 0 0 0.77vw rgba(orange, 0.4), 0 0 1.54vw rgba(orange, 0.4),
+        0 0 4.62vw rgba(orange, 0.4), 0 0 6.15vw rgba(orange, 0.4);
     }
     100% {
       transform: skewX(5deg);
-      box-shadow: 0 0 10px rgba(orange, 0.5), 0 0 20px rgba(orange, 0.5),
-        0 0 60px rgba(orange, 0.5), 0 0 80px rgba(orange, 0.5);
+      box-shadow: 0 0 0.77vw rgba(orange, 0.5), 0 0 1.54vw rgba(orange, 0.5),
+        0 0 4.62vw rgba(orange, 0.5), 0 0 6.15vw rgba(orange, 0.5);
     }
   }
 }
