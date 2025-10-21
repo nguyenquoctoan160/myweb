@@ -9,7 +9,7 @@ const HappyBirthDay = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [timeLeft, setTimeLeft] = useState(null);
   const [serverTime, setServerTime] = useState(null);
-  const birthday = "2025-10-17T15:32:00"; // cập nhật lại ngày sinh cho đúng năm
+  const birthday = "2025-11-23T00:00:00"; // cập nhật lại ngày sinh cho đúng năm
   const audioRef = useRef(new Audio(music));
 
   // Lấy thời gian thực từ API

@@ -10,13 +10,13 @@ const Balloons = () => {
           <span className="longtext">Birth</span>
         </div>
         <div>
-          <span>D</span>
+          <span className="longtext">Day</span>
         </div>
         <div>
-          <span>A</span>
+          <span>16</span>
         </div>
         <div>
-          <span>Y</span>
+          <span>th</span>
         </div>
       </div>{" "}
     </div>

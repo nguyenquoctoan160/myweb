@@ -2,10 +2,12 @@ import "./backFace.scss";
 import Balloons from "./component/Balloon/Balloon";
 import BirthDayCake from "./component/BirthDayCake/BirthDayCake";
 import FireWork from "./component/Firework/FireWork";
+import imageClaims from "./image/conso.png";
 import imageOcto from "./image/octo-removebg-preview.png";
 import { useState } from "react";
 import scifiBubble from "./image/sci-fi-bubble-pop-89059.mp3";
 import BubblePop from "./image/bubble-sound-43207.mp3";
+import Clam from "./component/Clam/Clam.jsx";
 const BackFace = () => {
   const [bubbles, setBubbles] = useState([]);
   const playBubbleSound = () => {
@@ -43,7 +45,7 @@ const BackFace = () => {
       <div className="BFBorder">
         <Balloons></Balloons>
         <div className="BDtext">
-          <div> Happy Birthday, Bao Anh!</div>
+          <div> Happy Birthday 16th, Bao Anh!</div>
           <div>
             {" "}
             May this special day bring endless joy, love, and success your way.
@@ -67,8 +69,10 @@ const BackFace = () => {
         src={imageOcto}
         onClick={handleClick}
         style={{ cursor: "pointer" }}
+        className="octo"
         alt="Sticker"
       />
+      <Clam></Clam>
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}

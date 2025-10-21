@@ -19,6 +19,7 @@ const Home = () => {
           placeholder="Nhập gì đó vào ..."
           value={text} // Gán giá trị của input với state
           onChange={(e) => setText(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleClick()}
         ></input>
         <div className="btnHome" onClick={handleClick}>
           <FaPersonBooth />
