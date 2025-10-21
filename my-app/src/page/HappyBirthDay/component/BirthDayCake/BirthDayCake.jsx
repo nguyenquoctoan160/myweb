@@ -2,9 +2,9 @@ import "./birthDayCake.scss";
 import { useState } from "react";
 import { FaFire } from "react-icons/fa";
 const BirthDayCake = () => {
-  const [candle1, SetCandle1] = useState(false);
-  const [candle2, SetCandle2] = useState(false);
-  const [candle3, SetCandle3] = useState(false);
+  const [candle1, SetCandle1] = useState(true);
+  const [candle2, SetCandle2] = useState(true);
+  const [candle3, SetCandle3] = useState(true);
   const lightOn = () => {
     SetCandle1(true);
     SetCandle2(true);

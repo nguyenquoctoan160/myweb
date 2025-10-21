@@ -1,0 +1,47 @@
+.clam {
+  left: 11vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 19vw;
+  top: 29vw;
+  .claim {
+    &:hover {
+      animation: shake-center 1s ease;
+    }
+  }
+  h1 {
+    position: absolute;
+    z-index: 2;
+    font-family: "Pacifico", cursive;
+    font-size: 2.5vw;
+    pointer-events: none;
+    cursor: default;
+    color: rgb(255, 80, 223);
+    -webkit-text-stroke: 0.1vw #fff;
+    top: 1vw;
+    transition: ease 0.75s opacity;
+  }
+  .texthidden {
+    opacity: 0;
+  }
+  .degree {
+    width: 9vw;
+    margin-top: 8vw;
+    height: 6vw;
+    transition: ease 0.75s transform;
+    transform-origin: top right;
+    z-index: 2;
+    border: 0.5vw solid rgb(189, 189, 255);
+  }
+  .hidden {
+    transform: scale(0) rotate(90deg);
+  }
+  img {
+    position: absolute;
+    top: 0;
+    width: 15vw;
+    height: 15vw;
+  }
+}

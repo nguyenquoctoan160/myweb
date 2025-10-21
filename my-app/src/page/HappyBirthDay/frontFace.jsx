@@ -3,7 +3,9 @@ const FrontFace = () => {
   return (
     <div className="BDfrontfaceContainer">
       <div className="ffName">
-        <p>To NGUYEN PHUC BAO ANH</p>
+        <h1>HAPPY BIRTHDAY</h1>
+        <h2>BEST WISH TO YOU</h2>
+        <p>TO NGUYEN PHUC BAO ANH</p>
         <p>23 - 11 - 2025</p>
       </div>
     </div>

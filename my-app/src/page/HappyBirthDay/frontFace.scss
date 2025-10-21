@@ -11,7 +11,7 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 .BDfrontfaceContainer {
-  background: url("./image/frontfacebg.webp") no-repeat center center;
+  background: url("./image/oceanbackground.png") no-repeat center center;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -28,10 +28,25 @@
     align-items: center;
     font-weight: bolder;
     font-size: 1.5vw;
-    margin-top: 65%;
+    margin-top: 40%;
     font-family: "Pacifico", cursive;
     color: #40413c;
+    h1 {
+      color: rgb(0, 21, 255);
+      font-size: 3vw;
+      -webkit-text-stroke: 0.1vw rgb(238, 255, 0);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h2 {
+      color: rgb(0, 21, 255);
+      -webkit-text-stroke: 0.1vw rgb(238, 255, 0);
+      font-size: 2.5vw;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     p {
+      color: rgb(255, 255, 255);
       margin-top: 0.38vw;
       margin-bottom: 0.38vw;
     }
