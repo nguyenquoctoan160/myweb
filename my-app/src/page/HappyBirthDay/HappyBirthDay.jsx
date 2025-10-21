@@ -9,6 +9,7 @@ const HappyBirthDay = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [timeLeft, setTimeLeft] = useState(null);
   const [serverTime, setServerTime] = useState(null);
+  const [isloading, setIsLoading] = useState(true);
   const birthday = "2025-11-23T00:00:00"; // cập nhật lại ngày sinh cho đúng năm
   const audioRef = useRef(new Audio(music));
 
@@ -54,6 +55,7 @@ const HappyBirthDay = () => {
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
         setTimeLeft({ days, hours, minutes, seconds });
       }
+      setIsLoading(false);
     };
 
     const timer = setInterval(updateTimeLeft, 1000);
@@ -73,9 +75,6 @@ const HappyBirthDay = () => {
     else stopAudio();
   };
 
-  if (!serverTime)
-    return <div className="loading">Đang tải thời gian thực...</div>;
-
   if (timeLeft) {
     return (
       <div className="countdown-container">
@@ -88,24 +87,28 @@ const HappyBirthDay = () => {
   }
 
   // Display the birthday content if the time has passed
-  return (
-    <div className="book-container">
-      <div className={`book ${isOpen ? "open" : ""}`} id="book">
-        <div className="cover">
-          <div className="page front">
-            <FrontFace />
+  if (serverTime && !isloading) {
+    return (
+      <div className="book-container">
+        <div className={`book ${isOpen ? "open" : ""}`} id="book">
+          <div className="cover">
+            <div className="page front">
+              <FrontFace />
+            </div>
+            <div className="page back"></div>
           </div>
-          <div className="page back"></div>
         </div>
+        <div className="secondpage">
+          <BackFace />
+        </div>
+        <button className="btnHBD" onClick={toggleBook}>
+          <FaDoorOpen />
+        </button>
       </div>
-      <div className="secondpage">
-        <BackFace />
-      </div>
-      <button className="btnHBD" onClick={toggleBook}>
-        <FaDoorOpen />
-      </button>
-    </div>
-  );
+    );
+  } else {
+    return <div className="loading">Đang tải thời gian thực...</div>;
+  }
 };
 
 export default HappyBirthDay;
